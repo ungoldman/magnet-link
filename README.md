@@ -6,8 +6,6 @@ Get a magnet from a torrent file.
 npm install magnet-link
 ```
 
-[![NPM](https://nodei.co/npm/magnet-link.png?downloads=true)](https://npmjs.org/package/magnet-link)
-
 ## Usage
 
 ``` js
