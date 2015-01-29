@@ -1,6 +1,6 @@
 # magnet-link
 
-![https://travis-ci.org/ngoldman/magnet-link](https://travis-ci.org/ngoldman/magnet-link.svg)
+[![](https://travis-ci.org/ngoldman/magnet-link.svg)](https://travis-ci.org/ngoldman/magnet-link)
 
 Get a magnet from a torrent file.
 
