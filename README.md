@@ -46,7 +46,7 @@ This will print the magnet link to the terminal.
 
 ## Resources
 
-* Read more about the magnet URI scheme: [MAGNET-URI Project](http://magnet-uri.sourceforge.net)
+Read more about the magnet URI scheme at the [magnet-uri project website](http://magnet-uri.sourceforge.net).
 
 ## Comments
 
