@@ -4,7 +4,7 @@
   "version": "1.0.2",
   "author": "Nate Goldman <nate@ngoldman.me>",
   "bin": {
-    "magnet-link": "./cli.js"
+    "magnet-link": "./bin/cli.js"
   },
   "bugs": {
     "url": "https://github.com/ngoldman/gfm.css/issues"

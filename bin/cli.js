@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var magnetLink = require('./index.js')
+var magnetLink = require('..')
 
 if (!process.argv[2]) {
   console.error('usage: magnet-link torrent')
