@@ -10,7 +10,7 @@ npm install magnet-link
 
 ## Usage
 
-``` js
+```js
 var magnetLink = require('magnet-link')
 
 magnetLink('http://my-server.com/file.torrent', function (err, link) {
@@ -43,6 +43,10 @@ magnet-link http://my-server.com/file.torrent
 ```
 
 This will print the magnet link to the terminal.
+
+## Resources
+
+* Read more about the magnet URI scheme: [MAGNET-URI Project](http://magnet-uri.sourceforge.net)
 
 ## Comments
 
