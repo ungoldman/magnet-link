@@ -1,7 +1,7 @@
 {
   "name": "magnet-link",
   "description": "Get a magnet link from a torrent file.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Nate Goldman <nate@ngoldman.me>",
   "bin": {
     "magnet-link": "./cli.js"
