@@ -11,15 +11,15 @@ npm install magnet-link
 ## Usage
 
 ``` js
-var magnetLink = require('magnet-link');
+var magnetLink = require('magnet-link')
 
-magnetLink('http://my-server.com/file.torrent', function(err, link) {
+magnetLink('http://my-server.com/file.torrent', function (err, link) {
   // you got a magnet link from a remote torrent file
-});
+})
 
-magnetLink('mydir/file.torrent', function(err, link) {
+magnetLink('mydir/file.torrent', function (err, link) {
   // you got a magnet link from a local torrent file
-});
+})
 ```
 
 The result is a string that looks like this.
