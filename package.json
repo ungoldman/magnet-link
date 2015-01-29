@@ -1,16 +1,10 @@
 {
   "name": "magnet-link",
-  "version": "1.0.0",
   "description": "Get a magnet link from a torrent file.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "1.0.0",
   "author": "Nate Goldman <nate@ngoldman.me>",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ngoldman/magnet-link.git"
+  "bin": {
+    "magnet-link": "./cli.js"
   },
   "bugs": {
     "url": "https://github.com/ngoldman/gfm.css/issues"
@@ -18,7 +12,16 @@
   "dependencies": {
     "read-torrent": "^1.2.0"
   },
-  "bin": {
-    "magnet-link": "./cli.js"
+  "devDependencies": {
+    "standard": "^2.0.0"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngoldman/magnet-link.git"
+  },
+  "scripts": {
+    "test": "node node_modules/standard/bin/cmd.js"
   }
 }
