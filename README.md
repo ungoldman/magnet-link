@@ -54,4 +54,4 @@ Thanks to https://github.com/mafintosh for `read-torrent` and https://github.com
 
 ## License
 
-ISC
+[ISC](LICENSE.md)
