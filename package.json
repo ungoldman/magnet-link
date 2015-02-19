@@ -13,6 +13,7 @@
     "read-torrent": "^1.2.0"
   },
   "devDependencies": {
+    "gh-release": "^1.0.7",
     "standard": "^2.0.0",
     "tape": "^3.4.0"
   },
@@ -27,6 +28,7 @@
     "url": "https://github.com/ngoldman/magnet-link.git"
   },
   "scripts": {
-    "test": "node node_modules/standard/bin/cmd.js && node scripts/test.js"
+    "release": "gh-release",
+    "test": "standard && node test"
   }
 }
