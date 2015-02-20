@@ -1,6 +1,7 @@
 # magnet-link
 
-[![](https://travis-ci.org/ngoldman/magnet-link.svg)](https://travis-ci.org/ngoldman/magnet-link)
+[![](https://img.shields.io/npm/v/magnet-link.svg?style=flat-square)](https://www.npmjs.com/package/magnet-link)
+[![](https://img.shields.io/travis/ngoldman/magnet-link.svg?style=flat-square)](https://travis-ci.org/ngoldman/magnet-link)
 
 Get a magnet from a torrent file.
 
