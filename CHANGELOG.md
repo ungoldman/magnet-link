@@ -1,11 +1,14 @@
-# magnet-link changelog
+# magnet-link change log
+All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [unreleased]
-* housekeeping
-  * renamed scripts to test since it only contains test script
-  * readme tweaks
-  * added gh-release to package.json scripts
-  * improved test script task
+## [1.0.4] - 2015-04-07
+* renamed scripts to test since it only contains test script
+* various sundry readme updates
+* improved test script task
+* update dependencies
+* add `CONTRIBUTING.md`
+* update `.travis.yml` to use docker & cache `node_modules`
 
 ## [1.0.3] - 2015-01-28
 * improve test coverage
@@ -25,7 +28,7 @@
 ## 1.0.0 - 2015-01-23
 * first!
 
-[unreleased]: https://github.com/ngoldman/magnet-link/compare/v1.0.3...HEAD
+[1.0.4]: https://github.com/ngoldman/magnet-link/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/ngoldman/magnet-link/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/ngoldman/magnet-link/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/ngoldman/magnet-link/compare/v1.0.0...v1.0.1
