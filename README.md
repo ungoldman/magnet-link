@@ -53,6 +53,10 @@ Read more about the magnet URI scheme at the [magnet-uri project website](http:/
 
 Thanks to https://github.com/mafintosh for `read-torrent` and https://github.com/maxogden for telling me to do it.
 
+## Contributing
+
+[Open-2](CONTRIBUTING.md)
+
 ## License
 
 [ISC](LICENSE.md)
