@@ -1,9 +1,14 @@
 # magnet-link
 
-[![](https://img.shields.io/npm/v/magnet-link.svg?style=flat-square)](https://www.npmjs.com/package/magnet-link)
-[![](https://img.shields.io/travis/ngoldman/magnet-link.svg?style=flat-square)](https://travis-ci.org/ngoldman/magnet-link)
+[![npm][npm-image]][npm-link]
+[![travis][travis-image]][travis-link]
 
-Get a magnet from a torrent file.
+[npm-image]: https://img.shields.io/npm/v/magnet-link.svg?style=flat-square
+[npm-link]: https://www.npmjs.com/package/magnet-link
+[travis-image]: https://img.shields.io/travis/ngoldman/magnet-link.svg?style=flat-square
+[travis-link]: https://travis-ci.org/ngoldman/magnet-link
+
+Get a magnet link from a torrent file.
 
 ```
 npm install magnet-link
