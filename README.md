@@ -1,5 +1,7 @@
 # magnet-link
 
+> Get a magnet link from a torrent file.
+
 [![npm][npm-image]][npm-link]
 [![travis][travis-image]][travis-link]
 
@@ -8,7 +10,9 @@
 [travis-image]: https://img.shields.io/travis/ngoldman/magnet-link.svg?style=flat-square
 [travis-link]: https://travis-ci.org/ngoldman/magnet-link
 
-Get a magnet link from a torrent file.
+Read more about the magnet URI scheme at the [magnet-uri project website](http://magnet-uri.sourceforge.net/).
+
+## Install
 
 ```
 npm install magnet-link
@@ -34,7 +38,7 @@ The result is a string that looks like this.
 magnet:?xt=urn:btih:[torrent-info-hash]
 ```
 
-## Command-line interface
+### Command-line interface
 
 There is also a command-line interface available if you install it with `-g`.
 
@@ -50,17 +54,13 @@ magnet-link http://my-server.com/file.torrent
 
 This will print the magnet link to the terminal.
 
-## Resources
-
-Read more about the magnet URI scheme at the [magnet-uri project website](http://magnet-uri.sourceforge.net).
-
 ## Comments
 
 Thanks to https://github.com/mafintosh for `read-torrent` and https://github.com/maxogden for telling me to do it.
 
 ## Contributing
 
-[Open-2](CONTRIBUTING.md)
+Contributions welcome! Please read the [contributing guidelines](CONTRIBUTING.md) before getting started.
 
 ## License
 
