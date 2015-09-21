@@ -10,7 +10,7 @@ var result = 'magnet:?xt=urn:btih:ef330b39f4801d25b4245212e75a38634bfc856e'
 
 test('convert url to magnet link', function (t) {
   magnetLink(url, function (err, link) {
-    if (err) { throw err }
+    t.error(err)
     t.equal(link, result)
     t.end()
   })
@@ -18,8 +18,8 @@ test('convert url to magnet link', function (t) {
 
 test('convert url to magnet link (cli)', function (t) {
   exec('node ../bin/cli.js ' + url, function (err, stdout, stderr) {
-    if (err) throw err
-    if (stderr) throw new Error(stderr)
+    t.error(err)
+    t.error(stderr)
     t.equal(stdout.replace(/[\n\r]/g, ''), result)
     t.end()
   })
@@ -27,7 +27,7 @@ test('convert url to magnet link (cli)', function (t) {
 
 test('convert file to magnet link', function (t) {
   magnetLink(file, function (err, link) {
-    if (err) { throw err }
+    t.error(err)
     t.equal(link, result)
     t.end()
   })
@@ -35,8 +35,8 @@ test('convert file to magnet link', function (t) {
 
 test('convert file to magnet link (cli)', function (t) {
   exec('node ../bin/cli.js ' + file, function (err, stdout, stderr) {
-    if (err) throw err
-    if (stderr) throw new Error(stderr)
+    t.error(err)
+    t.error(stderr)
     t.equal(stdout.replace(/[\n\r]/g, ''), result)
     t.end()
   })
