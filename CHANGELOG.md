@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## unreleased
+* make bin/cli.js executable (`chmod +x`)
+
 ## [1.0.4] - 2015-04-07
 * renamed scripts to test since it only contains test script
 * various sundry readme updates
