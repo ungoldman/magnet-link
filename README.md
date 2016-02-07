@@ -56,7 +56,7 @@ This will print the magnet link to the terminal.
 
 ## Comments
 
-Thanks to https://github.com/mafintosh for `read-torrent` and https://github.com/maxogden for telling me to do it.
+Thanks to [mafintosh](https://github.com/mafintosh) for [`read-torrent`](https://github.com/mafintosh/read-torrent) and [maxogden](https://github.com/maxogden) for telling me to do it.
 
 ## Contributing
 
