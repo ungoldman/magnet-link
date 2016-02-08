@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## unreleased
+## [1.1.1] - 2016-02-07
 * allow for piping without `-` option
 
 ## [1.1.0] - 2016-02-07
@@ -35,6 +35,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## 1.0.0 - 2015-01-23
 * first!
 
+[1.1.1]: https://github.com/ngoldman/magnet-link/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/ngoldman/magnet-link/compare/v1.0.4...v1.1.0
 [1.0.4]: https://github.com/ngoldman/magnet-link/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/ngoldman/magnet-link/compare/v1.0.2...v1.0.3
