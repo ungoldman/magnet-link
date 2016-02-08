@@ -54,6 +54,21 @@ magnet-link http://my-server.com/file.torrent
 
 This will print the magnet link to the terminal.
 
+
+#### Pipes
+
+You can also pipe the contents of a torrent file to `magnet-link` with the `-` option:
+
+```
+cat file.torrent | magnet-link -
+```
+
+This way it can be paired with [`create-torrent`](https://github.com/feross/create-torrent):
+
+```
+create-torrent . | magnet-link -
+```
+
 ## Comments
 
 Thanks to [mafintosh](https://github.com/mafintosh) for [`read-torrent`](https://github.com/mafintosh/read-torrent) and [maxogden](https://github.com/maxogden) for telling me to do it.

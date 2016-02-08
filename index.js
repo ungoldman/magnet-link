@@ -1,10 +1,16 @@
 var readTorrent = require('read-torrent')
 
-module.exports = function (torrent, callback) {
-  readTorrent(torrent, function (err, torrent) {
+function magnetLink (location, callback) {
+  readTorrent(location, function (err, torrent) {
     if (err) return callback(err)
-    if (!torrent.infoHash) return callback(new Error('Missing info hash'))
-
-    callback(null, 'magnet:?xt=urn:btih:' + torrent.infoHash)
+    fromTorrentObject(torrent, callback)
   })
 }
+
+function fromTorrentObject (torrent, callback) {
+  if (!torrent.infoHash) return callback(new Error('Missing info hash'))
+  callback(null, 'magnet:?xt=urn:btih:' + torrent.infoHash)
+}
+
+magnetLink.fromTorrentObject = fromTorrentObject
+module.exports = magnetLink

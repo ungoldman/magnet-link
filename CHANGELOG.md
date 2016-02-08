@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## unreleased
 * make bin/cli.js executable (`chmod +x`)
+* make torrent file contents pipable to `magnet-link -`
 
 ## [1.0.4] - 2015-04-07
 * renamed scripts to test since it only contains test script
