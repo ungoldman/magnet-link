@@ -50,7 +50,7 @@ test('convert file to magnet link (cli)', function (t) {
   })
 })
 
-test('pipe torrent file contents to `magnet-link -` (cli)', function (t) {
+test('pipe torrent file contents to `magnet-link` (cli)', function (t) {
   t.plan(1)
 
   var proc = child_process.exec('cat ' + file + ' | ./bin/cli.js -')

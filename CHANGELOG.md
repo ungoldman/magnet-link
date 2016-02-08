@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## unreleased
+* allow for piping without `-` option
+
 ## [1.1.0] - 2016-02-07
 * make bin/cli.js executable (`chmod +x`)
 * make torrent file contents pipable to `magnet-link -`

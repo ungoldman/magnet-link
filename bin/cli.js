@@ -5,12 +5,18 @@ var concat = require('concat-stream')
 var parseTorrent = require('parse-torrent')
 var argv = process.argv.slice(2)
 
-if (argv[0] !== '-') handleArgs()
-else handlePipes()
+if (argv[0] && argv[0] !== '-') {
+  handleArgs()
+} else if (!process.stdin.isTTY || argv._[0] === '-') {
+  handlePipes()
+} else {
+  printUsage()
+  process.exit(1)
+}
 
 function handleArgs () {
   if (!process.argv[2]) {
-    console.error('usage: magnet-link torrent')
+    printUsage()
     process.exit(1)
   }
 
@@ -36,4 +42,8 @@ function handler (err, link) {
   }
 
   console.log(link)
+}
+
+function printUsage () {
+  console.log('usage: magnet-link torrent')
 }

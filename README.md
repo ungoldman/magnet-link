@@ -60,16 +60,17 @@ This will print the magnet link to the terminal.
 
 #### Pipes
 
-You can also pipe the contents of a torrent file to `magnet-link` with the `-` option:
+You can also pipe the contents of a torrent file to `magnet-link`:
 
 ```
-cat file.torrent | magnet-link -
+cat file.torrent | magnet-link
+magnet-link < file.torrent
 ```
 
 This way it can be paired with [`create-torrent`](https://github.com/feross/create-torrent):
 
 ```
-create-torrent . | magnet-link -
+create-torrent . | magnet-link
 ```
 
 ## Comments
