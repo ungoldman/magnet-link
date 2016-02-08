@@ -4,11 +4,14 @@
 
 [![npm][npm-image]][npm-link]
 [![travis][travis-image]][travis-link]
+[![standard][standard-image]][standard-url]
 
 [npm-image]: https://img.shields.io/npm/v/magnet-link.svg?style=flat-square
 [npm-link]: https://www.npmjs.com/package/magnet-link
 [travis-image]: https://img.shields.io/travis/ngoldman/magnet-link.svg?style=flat-square
 [travis-link]: https://travis-ci.org/ngoldman/magnet-link
+[standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
+[standard-url]: http://standardjs.com/
 
 Read more about the magnet URI scheme at the [magnet-uri project website](http://magnet-uri.sourceforge.net/).
 
