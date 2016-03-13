@@ -2,12 +2,12 @@
   "name": "magnet-link",
   "description": "Get a magnet link from a torrent file.",
   "version": "1.1.1",
-  "author": "Nate Goldman <nate@ngoldman.me>",
+  "author": "Nate Goldman <ungoldman@gmail.com>",
   "bin": {
     "magnet-link": "./bin/cli.js"
   },
   "bugs": {
-    "url": "https://github.com/ngoldman/magnet-link/issues"
+    "url": "https://github.com/ungoldman/magnet-link/issues"
   },
   "dependencies": {
     "concat-stream": "^1.5.1",
@@ -23,7 +23,7 @@
     "index.js",
     "bin/cli.js"
   ],
-  "homepage": "https://github.com/ngoldman/magnet-link",
+  "homepage": "https://github.com/ungoldman/magnet-link",
   "keywords": [
     "link",
     "magnet",
@@ -36,7 +36,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ngoldman/magnet-link.git"
+    "url": "https://github.com/ungoldman/magnet-link.git"
   },
   "scripts": {
     "test": "standard && node test | tap-spec"
