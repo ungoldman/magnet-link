@@ -1,10 +1,10 @@
 var test = require('tape')
 var magnetLink = require('../')
-var child_process = require('child_process')
+var childProcess = require('child_process')
 
-var url = 'http://torcache.net/torrent/EF330B39F4801D25B4245212E75A38634BFC856E.torrent'
-var file = './test/test.torrent'
-var result = 'magnet:?xt=urn:btih:ef330b39f4801d25b4245212e75a38634bfc856e'
+var url = 'https://webtorrent.io/torrents/sintel.torrent'
+var file = './test/sintel.torrent'
+var result = 'magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10'
 
 test('convert url to magnet link', function (t) {
   magnetLink(url, function (err, link) {
@@ -17,10 +17,11 @@ test('convert url to magnet link', function (t) {
 test('convert url to magnet link (cli)', function (t) {
   t.plan(1)
 
-  var cli = child_process.spawn('node', ['./bin/cli.js', url])
+  var cli = childProcess.spawn('node', ['./bin/cli.js', url])
 
   cli.stderr.on('data', function (data) {
     t.error(data, 'does not error')
+    console.log(data.toString())
   })
 
   cli.stdout.on('data', function (data) {
@@ -39,7 +40,7 @@ test('convert file to magnet link', function (t) {
 test('convert file to magnet link (cli)', function (t) {
   t.plan(1)
 
-  var proc = child_process.exec('./bin/cli.js ' + file)
+  var proc = childProcess.exec('./bin/cli.js ' + file)
 
   proc.stderr.on('data', function (data) {
     t.error(data, 'does not error')
@@ -53,7 +54,7 @@ test('convert file to magnet link (cli)', function (t) {
 test('pipe torrent file contents to `magnet-link` (cli)', function (t) {
   t.plan(1)
 
-  var proc = child_process.exec('cat ' + file + ' | ./bin/cli.js -')
+  var proc = childProcess.exec('cat ' + file + ' | ./bin/cli.js -')
 
   proc.stderr.on('data', function (data) {
     t.error(data, 'does not error')
