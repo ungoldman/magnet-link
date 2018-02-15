@@ -1,6 +1,19 @@
 # magnet-link change log
+
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
+
+## [1.1.2] - 2018-02-14
+
+### Maintenance
+
+* update package metadata
+* update documentation
+* update contributing guidelines
+* update license
+* update dependencies
+* update dev dependencies
+* update tests
 
 ## [1.1.1] - 2016-02-07
 * allow for piping without `-` option
