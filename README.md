@@ -1,17 +1,19 @@
 # magnet-link
 
-> Get a magnet link from a torrent file.
+Get a magnet link from a torrent file.
 
-[![npm][npm-image]][npm-link]
-[![travis][travis-image]][travis-link]
-[![standard][standard-image]][standard-url]
+[![npm][1]][2]
+[![travis][3]][4]
+[![standard][5]][6]
+[![downloads][7]][2]
 
-[npm-image]: https://img.shields.io/npm/v/magnet-link.svg?style=flat-square
-[npm-link]: https://www.npmjs.com/package/magnet-link
-[travis-image]: https://img.shields.io/travis/ungoldman/magnet-link.svg?style=flat-square
-[travis-link]: https://travis-ci.org/ungoldman/magnet-link
-[standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
-[standard-url]: http://standardjs.com/
+[1]: https://img.shields.io/npm/v/magnet-link.svg?style=flat-square
+[2]: https://www.npmjs.com/package/magnet-link
+[3]: https://img.shields.io/travis/ungoldman/magnet-link/master.svg?style=flat-square
+[4]: https://travis-ci.org/ungoldman/magnet-link
+[5]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
+[6]: http://standardjs.com/
+[7]: https://img.shields.io/npm/dm/magnet-link.svg?style=flat-square
 
 Read more about the magnet URI scheme at the [magnet-uri project website](http://magnet-uri.sourceforge.net/).
 
@@ -23,14 +25,20 @@ npm install magnet-link
 
 ## Usage
 
+### Node
+
 ```js
 var magnetLink = require('magnet-link')
 
 magnetLink('http://my-server.com/file.torrent', function (err, link) {
+  if (err) throw err
+  console.log(link)
   // you got a magnet link from a remote torrent file
 })
 
 magnetLink('mydir/file.torrent', function (err, link) {
+  if (err) throw err
+  console.log(link)
   // you got a magnet link from a local torrent file
 })
 ```
@@ -41,7 +49,7 @@ The result is a string that looks like this.
 magnet:?xt=urn:btih:[torrent-info-hash]
 ```
 
-### Command-line interface
+### CLI
 
 There is also a command-line interface available if you install it with `-g`.
 
@@ -72,10 +80,6 @@ This way it can be paired with [`create-torrent`](https://github.com/feross/crea
 ```
 create-torrent . | magnet-link
 ```
-
-## Comments
-
-Thanks to [mafintosh](https://github.com/mafintosh) for [`read-torrent`](https://github.com/mafintosh/read-torrent) and [maxogden](https://github.com/maxogden) for telling me to do it.
 
 ## Contributing
 
