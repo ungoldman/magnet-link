@@ -1,4 +1,5 @@
 # magnet-link
+## DEPRECATED: this project is no longer maintained
 
 Get a magnet link from a torrent file.
 
